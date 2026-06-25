@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="wa-theme-default">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unhoused in San Francisco</title>
+    <meta name="description" content="A data snapshot of San Francisco homelessness — shelter status, demographics, behavioral health, and treatment." />
+  </head>
+  <body>
+    <header class="page-head">
+      <h1>Unhoused in San Francisco</h1>
+      <p class="sub">A data snapshot. San Francisco · compiled June 2026 (underlying data mostly 2024–2026).</p>
+    </header>
+
+    <main class="report">
+      <wa-card with-header>
+        <h2 slot="header">1 · Over a full year — how many are unhoused</h2>
+        <annual-count></annual-count>
+      </wa-card>
+
+      <wa-card with-header>
+        <h2 slot="header">2 · On a single night — where they sleep</h2>
+        <shelter-split></shelter-split>
+      </wa-card>
+
+      <wa-card with-header>
+        <h2 slot="header">3 · Who they are — overrepresentation vs. the city</h2>
+        <disparity-bars></disparity-bars>
+      </wa-card>
+
+      <wa-card with-header>
+        <h2 slot="header">4 · Behavioral health — how substance use and mental illness overlap</h2>
+        <cooccurrence-bar></cooccurrence-bar>
+      </wa-card>
+
+      <wa-card with-header>
+        <h2 slot="header">5 · What we are trying to provide</h2>
+        <treatment-funnels></treatment-funnels>
+      </wa-card>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

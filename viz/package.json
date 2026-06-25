@@ -1,0 +1,16 @@
+{
+  "name": "sf-homelessness-viz",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.6"
+  },
+  "dependencies": {
+    "@awesome.me/webawesome": "^3.7.0"
+  }
+}

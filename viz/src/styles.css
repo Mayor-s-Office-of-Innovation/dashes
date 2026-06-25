@@ -1,0 +1,50 @@
+:root {
+  --maxw: 880px;
+
+  /* data palette (inherits into component shadow roots via custom properties) */
+  --c-street: #c2410c;        /* unsheltered / "on the street" */
+  --c-shelter: #0e7490;       /* sheltered (temporary) */
+  --c-bar-homeless: #b45309;  /* demographics: homeless share */
+  --c-bar-city: #cbd5e1;      /* demographics: city share */
+  --c-sud: #7c3aed;           /* substance use */
+  --c-smi: #0e7490;           /* serious mental illness */
+  --c-funnel: #b45309;        /* treatment funnels */
+  --c-good: #15803d;          /* "it works" efficacy */
+
+  --ink: var(--wa-color-text-normal, #1e293b);
+  --muted: var(--wa-color-text-quiet, #64748b);
+  --link: #0e7490;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; min-height: 100%; }
+body {
+  font-family: var(--wa-font-family-body, system-ui, -apple-system, "Segoe UI", sans-serif);
+  color: var(--ink);
+  background: var(--wa-color-surface-lower, #f1f5f9);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-head {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) 1.25rem 0.25rem;
+}
+.page-head h1 {
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  line-height: 1.12;
+  margin: 0 0 .4rem;
+  letter-spacing: -.01em;
+}
+.page-head .sub { color: var(--muted); margin: 0; font-size: clamp(1rem, 2.5vw, 1.1rem); }
+
+.report {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.report h2 { font-size: 1.1rem; margin: 0; letter-spacing: -.01em; }
